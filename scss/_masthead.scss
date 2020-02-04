@@ -1,0 +1,52 @@
+section#masthead {
+  position: relative;
+  padding: 50px 0;
+  height: 42vw;
+  .YTPOverlay {
+    background-color: $dark;
+    opacity: 0.5;
+  }
+  button#bgndVideo_volume {
+    position: relative;
+    z-index: 3;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: $primary;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  button._on {
+    background: url("../img/speaker-on.png") center center no-repeat / 20px;
+  }
+  button._off {
+    background: url("../img/speaker-off.png") center center no-repeat / 20px;
+  }
+  .text {
+    position: relative;
+    top: calc(50% - 7em);
+    text-align: center;
+    img {
+      width: 200px;
+    }
+    h2 {
+      color: $primary;
+      text-transform: uppercase;
+      padding-top: 50px;
+    }
+  }
+}
+@media(max-width: 767px) {
+  section#masthead {
+    height: 62vw;
+  }
+}
+@media(max-width: 575px) {
+  section#masthead {
+    height: 82vw;
+    padding: 20px 0;
+    .text img {
+      width: 150px;
+    }
+  }
+}

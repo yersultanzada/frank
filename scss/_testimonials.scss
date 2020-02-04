@@ -1,0 +1,22 @@
+section#testimonials {
+  .block-img {
+    img {
+      width: 64px;
+      border-radius: 50%;
+    }
+  }
+}
+section#social {
+  .list-inline-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .list-inline-item a {
+    color: $primary-100;
+    i {
+      font-size: 35px;
+    }
+    &:hover {
+      color: $orange;
+    }
+  }
+}

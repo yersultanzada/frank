@@ -1,0 +1,41 @@
+.callToAction {
+  background-color: $orange;
+  .callToAction-text {
+    font-size: 20px;
+    color: $dark-100;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+  form {
+    .form-row {
+      display: block;
+      .form-control {
+        height: calc(2.25rem + 7px);
+        margin-bottom: 10px;
+      }
+      .btn {
+        background-color: $dark-100;
+        color: $primary;
+        &:hover {
+          background-color: lighten($dark-100, 10%);
+        }
+      }
+    }
+  }
+  .callToAction-text-bottom {
+    font-size: 14px;
+    color: $dark-100;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto 0;
+  }
+}
+@media(min-width: 768px) {
+  .callToAction form .form-row {
+    display: flex;
+    .form-control {
+      margin-bottom: 0;
+    }
+  }
+}

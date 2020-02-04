@@ -1,0 +1,76 @@
+section#schedule {
+  .table-borderless {
+    font-size: 14px;
+    .colored-box {
+      position: relative;
+      background-color: #4b5460;
+      i {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        transform: translate(-40%);
+        color: $orange;
+      }
+    }
+    thead {
+      th {
+        text-align: center;
+        padding: 7px;
+        div {
+          padding: 9px;
+          background-color: $dark-100;
+          border-radius: 2px;
+        }
+        &:nth-of-type(2) {
+          padding-left: 0;
+        }
+        &:nth-of-type(5) {
+          padding-right: 0;
+        }
+      }
+    }
+    tbody {
+      tr {
+        background-color: #373D46;
+        th {
+          background-color: $dark;
+          text-align: center;
+          padding: 7px;
+          vertical-align: middle;
+          div {
+            padding: 9px;
+            background-color: $dark-100;
+            border-radius: 2px;
+          }
+        }
+        td {
+          padding: 5px;
+          vertical-align: middle;
+          p {
+            margin-bottom: 0;
+            line-height: 1.2;
+          }
+          p.box-teacher {
+            font-style: italic;
+            color: $primary-100;
+          }
+          div {
+            padding: 9px;
+            border-radius: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+@media(max-width: 767px) {
+  section#schedule {
+    .container.schedule-long {
+      max-width: 100%;
+      .table-responsive {
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+    }
+  }
+}

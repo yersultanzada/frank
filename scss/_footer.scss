@@ -1,0 +1,62 @@
+// Styling for the footer
+section#footer {
+  background-color: $dark-100;
+  padding-bottom: 30px;
+  .footer-item {
+    font-size: 20px;
+    color: $primary;
+  }
+  ul.nav {
+    display: block;
+    a.nav-link {
+      display: inline-block;
+      color: $primary-100;
+      padding: .2rem 1rem;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+  a.footer-tel {
+    display: inline-block;
+    color: $primary-100;
+    text-decoration: none;
+    padding: 0.2rem 0;
+    &:hover {
+      color: $primary;
+    }
+  }
+  p.footer-address {
+    margin-bottom: 0;
+    padding: 0.2rem 0;
+  }
+  .list-inline-item a {
+    color: $primary-100;
+    i {
+      font-size: 20px;
+    }
+    &:hover {
+      color: $primary;
+    }
+  }
+  form {
+    input.form-control {
+      background-color: transparent;
+      border: 1px solid $primary-100;
+    }
+  }
+  .footer-copyright {
+    border-top: 1px solid $dark;
+    a {
+      color: $primary-100;
+    }
+  }
+}
+@media (max-width: 767px) {
+  section#footer a.nav-link {
+    padding: .5rem 1rem;
+  }
+  section#footer .wt-border-top .text-right {
+    text-align: left !important;
+  }
+}
