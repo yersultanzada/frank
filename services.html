@@ -51,7 +51,7 @@
                     <a class="nav-link js-scroll-trigger" href="blog.html">Блог</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="index.html#footer">Контакты</a>
+                    <a class="nav-link js-scroll-trigger" href="index.html#address">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -255,11 +255,18 @@
                 <p class="footer-item">
                     Заказать обратный звонок
                 </p>
-                <form>
+                <form class="contact-form" id="contact-form_2" method="POST">
                     <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Телефон *" required>
+                        <input type="tel" class="form-control contact-form__input contact-form__input_tel2" placeholder="Ваш телефон *" name="tel" required="required">
                     </div>
-                    <button type="submit" class="btn wt-btn-primary wt-btn-size-md w-100">Заказать звонок</button>
+                    <button type="submit" class="btn wt-btn-primary wt-btn-size-md w-100 contact-form__button">
+                 <span class="_preloader">
+                      <i class="fas fa-spinner fa-spin fa-fw"></i>
+                      <span class="sr-only">Loading...</span>
+                    </span>
+                        Заказать звонок
+                    </button>
+                    <p class="contact-form__description text-center mt-3"></p>
                 </form>
             </div>
         </div>
@@ -314,12 +321,13 @@
                             <a class="nav-link js-scroll-trigger" href="blog.html">Блог</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="index.html#footer">Контакты</a>
+                            <a class="nav-link js-scroll-trigger" href="index.html#address">Контакты</a>
                         </li>
                     </ul>
                 </div>
+                <div class="modal_helper"></div>
                 <div class="request_btn">
-                    <a class="btn wt-btn-orange wt-btn-size-sm wt-btn-rounded" href="#">Записаться на пробный урок</a>
+                    <a class="btn wt-btn-orange wt-btn-size-sm wt-btn-rounded js-scroll-trigger" href="index.html#callToAction">Записаться на пробный урок</a>
                 </div>
             </div>
         </div>
@@ -329,12 +337,18 @@
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+<!-- jQuery Mask Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/project.min.js"></script>
-
+<script src="mail/js/mail.js"></script>
+<script>
+    $(function() {
+        $('.contact-form__input_tel2').mask('+7(000)000-00-00');
+    });
+</script>
 </body>
 
 </html>

@@ -26,6 +26,10 @@ a {
     color: lighten($gray-900, 10%);
   }
 }
+._preloader {
+  display: none;
+  padding-right: 5px;
+}
 
 .wt-text-primary {
   color: $primary !important;

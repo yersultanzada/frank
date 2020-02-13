@@ -16,11 +16,14 @@ section#masthead {
     padding: 5px;
     border-radius: 50%;
   }
-  button._on {
+/*  button._on {
     background: url("../img/speaker-on.png") center center no-repeat / 20px;
-  }
+  }*/
   button._off {
-    background: url("../img/speaker-off.png") center center no-repeat / 20px;
+    /*background: url("../img/speaker-off.png") center center no-repeat / 20px;*/
+    .fa-volume-up:before {
+      content: "\f026";
+    }
   }
   .text {
     position: relative;

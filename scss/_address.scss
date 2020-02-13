@@ -1,0 +1,12 @@
+section#address {
+  a {
+    color: $primary-100;
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
