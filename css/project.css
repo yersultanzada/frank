@@ -656,6 +656,10 @@ section#directions-page-block .block-other-directions a.wt-btn-transparent:activ
   background-color: #2c323b;
 }
 
+.callToAction form .form-row ._preloader {
+  display: none;
+}
+
 .callToAction .callToAction-text-bottom {
   font-size: 14px;
   color: #16191e;

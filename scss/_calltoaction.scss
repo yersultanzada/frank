@@ -21,6 +21,9 @@
           background-color: lighten($dark-100, 10%);
         }
       }
+      ._preloader {
+        display: none;
+      }
     }
   }
   .callToAction-text-bottom {

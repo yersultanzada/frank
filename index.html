@@ -618,6 +618,39 @@ vol:100, mute:true, startAt:5, ratio:16/9, opacity:1, addRaster:false, quality:'
       </div>
     </section>
 
+    <!-- Форма -->
+    <section class="callToAction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="callToAction-text">
+              Запишитесь на первый пробный урок, который будет абсолютно бесплатным!
+            </div>
+            <form class="contact-form" id="contact-form_1" method="POST">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control contact-form__input contact-form__input_name" placeholder="Ваше имя *" name="name" minlength="2" maxlength="30" required="required">
+                </div>
+                <div class="col">
+                  <input type="tel" class="form-control contact-form__input contact-form__input_tel" placeholder="Ваш телефон *" name="tel" required="required">
+                </div>
+                <div class="col">
+                  <button type="submit" id="button" class="btn wt-btn-size-md w-100 contact-form__button">
+                    <span class="_preloader">
+                      <i class="fas fa-spinner fa-spin fa-fw"></i>
+                      <span class="sr-only">Loading...</span>
+                    </span>
+                    Отправить заявку
+                  </button>
+                </div>
+              </div>
+              <p class="contact-form__description text-center mt-3"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Адрес -->
     <section id="address">
       <div class="container">
@@ -646,32 +679,6 @@ vol:100, mute:true, startAt:5, ratio:16/9, opacity:1, addRaster:false, quality:'
               <li class="list-inline-item"><a href="https://www.facebook.com/frankvaldesds/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
               <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCBAOhtDRmpJZxk8SEnYxPnQ" target="_blank"><i class="fab fa-youtube"></i></a></li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Форма -->
-    <section class="callToAction">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="callToAction-text">
-              Запишитесь на первый пробный урок, который будет абсолютно бесплатным!
-            </div>
-            <form action="">
-              <div class="form-row">
-                <div class="col">
-                  <input type="text" class="form-control" placeholder="Ваше имя *" name="name" minlength="2" maxlength="30" required="">
-                </div>
-                <div class="col">
-                  <input type="tel" class="form-control phone" placeholder="Ваш телефон *" name="phone" required="">
-                </div>
-                <div class="col">
-                  <button type="submit" id="button" class="btn wt-btn-size-md w-100">Отправить заявку</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -828,13 +835,15 @@ vol:100, mute:true, startAt:5, ratio:16/9, opacity:1, addRaster:false, quality:'
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <!-- jQuery Mask Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/jquery/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/tabs.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/project.min.js"></script>
+    <script src="mail/js/mail.js"></script>
     <script>
       $(function(){
         $("#bgndVideo").mb_YTPlayer();
@@ -849,6 +858,9 @@ vol:100, mute:true, startAt:5, ratio:16/9, opacity:1, addRaster:false, quality:'
         }
       });
       $(".tabs").lightTabs();
+      $(function() {
+        $('.contact-form__input_tel').mask('+7(000)000-00-00');
+      });
     </script>
 
   </body>
