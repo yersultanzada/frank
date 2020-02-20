@@ -774,6 +774,20 @@ section#about .img-bg-dark img, section#about-us-block .img-bg-dark img, section
   width: 100%;
 }
 
+section#about img, section#about-us-block img, section#services-block img, section#blog-block img {
+  width: 100%;
+  margin: 4px 0 20px;
+}
+
+section#about a, section#about-us-block a, section#services-block a, section#blog-block a {
+  color: #adadaf;
+}
+
+section#about a:hover, section#about-us-block a:hover, section#services-block a:hover, section#blog-block a:hover {
+  color: #adadaf;
+  text-decoration: none;
+}
+
 section#blog-block .holder {
   display: inline-block;
   margin: 15px 0;
