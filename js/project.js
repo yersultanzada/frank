@@ -28,6 +28,14 @@
       $('body').addClass('js-no-scroll')
   });
 
+  $('#contact-form_1').submit(function () {
+    yaCounter60945862.reachGoal('form-trial-lesson');
+  });
+
+  $('#contact-form_2').submit(function () {
+    yaCounter60945862.reachGoal('form-feedback');
+  });
+
 })(jQuery); // End of use strict
 
 
